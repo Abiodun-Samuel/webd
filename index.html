@@ -9,7 +9,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon" />
     <!-- Stylesheets-->
     <link
       rel="stylesheet"
@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <style>
       .ie-panel {
         display: none;
@@ -55,122 +60,72 @@
     </div>
     <div class="page">
       <div id="home">
-        <!-- Top Banner-->
-        <!-- <a
-          class="section section-banner text-center d-none d-xl-block"
-          href="https://www.templatemonster.com/intense-multipurpose-html-template.html"
-          style="
-            background-image: url(images/banner/banner-bg-02-1920x60.jpg);
-            background-image: -webkit-image-set(
-              url(images/banner/banner-bg-02-1920x60.jpg) 1x,
-              url(images/banner/banner-bg-02-3840x120.jpg) 2x
-            );
-          "
-          target="_blank"
-          ><img
-            src="images/banner/banner-fg-02-1600x60.png"
-            srcset="
-              images/banner/banner-fg-02-1600x60.png  1x,
-              images/banner/banner-fg-02-3200x120.png 2x
-            "
-            alt=""
-            width="1600"
-            height="310"
-        /></a> -->
-        <!-- Page Header-->
-        <header class="section page-header">
-          <!-- RD Navbar-->
-          <div class="rd-navbar-wrap">
-            <nav
-              class="rd-navbar rd-navbar-classic"
-              data-layout="rd-navbar-fixed"
-              data-sm-layout="rd-navbar-fixed"
-              data-md-layout="rd-navbar-fixed"
-              data-md-device-layout="rd-navbar-fixed"
-              data-lg-layout="rd-navbar-static"
-              data-lg-device-layout="rd-navbar-fixed"
-              data-xl-layout="rd-navbar-static"
-              data-xl-device-layout="rd-navbar-static"
-              data-xxl-layout="rd-navbar-static"
-              data-xxl-device-layout="rd-navbar-static"
-              data-lg-stick-up-offset="46px"
-              data-xl-stick-up-offset="46px"
-              data-xxl-stick-up-offset="46px"
-              data-lg-stick-up="true"
-              data-xl-stick-up="true"
-              data-xxl-stick-up="true"
-            >
-              <div class="rd-navbar-main-outer">
-                <div class="rd-navbar-main">
-                  <!-- RD Navbar Panel-->
-                  <div class="rd-navbar-panel">
-                    <!-- RD Navbar Toggle-->
-                    <button
-                      class="rd-navbar-toggle"
-                      data-rd-navbar-toggle=".rd-navbar-nav-wrap"
-                    >
-                      <span></span>
-                    </button>
-                    <!-- RD Navbar Brand-->
-                    <div class="rd-navbar-brand">
-                      <a class="brand" href="index.html"
-                        ><img
-                          src="images/logo-default-223x50.png"
-                          alt=""
-                          width="223"
-                          height="50"
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="rd-navbar-main-element">
-                    <div class="rd-navbar-nav-wrap">
-                      <!-- RD Navbar Share-->
-                      <div
-                        class="rd-navbar-share fl-bigmug-line-share27"
-                        data-rd-navbar-toggle=".rd-navbar-share-list"
-                      >
-                        <ul class="list-inline rd-navbar-share-list">
-                          <li class="rd-navbar-share-list-item">
-                            <a class="icon fa fa-facebook" href="#"></a>
-                          </li>
-                          <li class="rd-navbar-share-list-item">
-                            <a class="icon fa fa-twitter" href="#"></a>
-                          </li>
-                          <li class="rd-navbar-share-list-item">
-                            <a class="icon fa fa-google-plus" href="#"></a>
-                          </li>
-                          <li class="rd-navbar-share-list-item">
-                            <a class="icon fa fa-instagram" href="#"></a>
-                          </li>
-                        </ul>
-                      </div>
-                      <ul class="rd-navbar-nav">
-                        <li class="rd-nav-item active">
-                          <a class="rd-nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="rd-nav-item">
-                          <a class="rd-nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="rd-nav-item">
-                          <a class="rd-nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="rd-nav-item">
-                          <a class="rd-nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="rd-nav-item">
-                          <a class="rd-nav-link" href="#news">News</a>
-                        </li>
-                        <li class="rd-nav-item">
-                          <a class="rd-nav-link" href="#contacts">Contacts</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </header>
+       
+        <header id="header">
+      <nav id="navie" class="navbar navbar-expand-md">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+               <img  class="profile-logo" src="images/logo.png" alt="profile-logo" /></a>
+
+              <ul class="navbar-nav nav-pills ml-auto list-unstyled" >
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">
+                  <i class="fas fa-home"></i> Home
+               </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutme">
+                  <i class="far fa-address-card"></i> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">
+                  <i class="fab fa-usps"></i> Services</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" href="#portfolio">
+                  <i class="fas fa-briefcase"></i> Portfolio</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" target="_blank" href="blog.html">
+                  <i class="fab fa-blogger-b"></i> Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                  <i class="fas fa-address-book"></i> Contact</a>
+                </li>
+
+                <div class="nav-contact">
+                  <hr />
+                  <ul>
+                     <li>
+                        <i class="fas fa-phone-alt cont-icons"></i> +1 5589
+                        55488 55<br />
+                     </li>
+                     <li>
+                        <i class="far fa-envelope cont-icons"></i>
+                        abiodunsamyemi@gmail.com
+                     </li>
+                  </ul>
+                  <hr />
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+              </ul>
+               
+            <div class="burger">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+
+         </div>
+      </nav>
+   </header>
 
         <!-- Swiper-->
         <section
@@ -178,13 +133,13 @@
           data-loop="true"
           data-autoplay="4859"
           data-simulate-touch="true"
-          data-direction="vertical"
+          data-direction="horizontal"
           data-nav="false"
         >
           <div class="swiper-wrapper text-center">
             <div
               class="swiper-slide"
-              data-slide-bg="images/slider-1-slide-2-1770x742.jpg"
+              data-slide-bg="images/hero1.jpg"
             >
               <div class="swiper-slide-caption section-md">
                 <div class="container">
@@ -206,14 +161,14 @@
                     data-toggle="modal"
                     data-caption-animate="fadeInUp"
                     data-caption-delay="200"
-                    >Get in touch</a
+                    >Get Started</a
                   >
                 </div>
               </div>
             </div>
             <div
               class="swiper-slide"
-              data-slide-bg="images/slider-1-slide-4-1770x742.jpg"
+              data-slide-bg="images/hero3.jpg"
             >
               <div class="swiper-slide-caption section-md">
                 <div class="container">
@@ -235,14 +190,14 @@
                     data-toggle="modal"
                     data-caption-animate="fadeInUp"
                     data-caption-delay="200"
-                    >Get in touch</a
+                    >Get Started</a
                   >
                 </div>
               </div>
             </div>
             <div
               class="swiper-slide"
-              data-slide-bg="images/slider-1-slide-6-1770x742.jpg"
+              data-slide-bg="images/hero2.jpg"
             >
               <div class="swiper-slide-caption section-md">
                 <div class="container">
@@ -253,9 +208,11 @@
                     class="text-width-large"
                     data-caption-animate="fadeInRight"
                     data-caption-delay="100"
-                  <!-- >
+                    <!--
+                  >
                     The software solutions developed by our company have been
-                    numerously awarded for usability and innovative features. -->
+                    numerously awarded for usability and innovative features.
+                    -->
                   </p>
                   <a
                     class="button button-primary button-ujarak"
@@ -263,7 +220,7 @@
                     data-toggle="modal"
                     data-caption-animate="fadeInUp"
                     data-caption-delay="200"
-                    >Get in touch</a
+                    >Get Started</a
                   >
                 </div>
               </div>
@@ -360,7 +317,7 @@
       <section class="section section-fluid bg-default">
         <div
           class="parallax-container"
-          data-parallax-img="images/parallax-1.jpg"
+          data-parallax-img="images/background-intro.jpg"
         >
           <div
             class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay"
@@ -1152,104 +1109,95 @@
       </section>
 
       <!-- What people Say-->
-      <section
-        class="section section-sm section-bottom-70 section-fluid bg-default"
-      >
-        <div class="container-fluid">
-          <h2>What people Say</h2>
-          <div class="row row-50 row-sm">
-            <div class="col-md-6 col-xl-4 wow fadeInRight">
-              <!-- Quote Modern-->
-              <article class="quote-modern quote-modern-custom">
-                <div class="unit unit-spacing-md align-items-center">
-                  <div class="unit-left">
-                    <a class="quote-modern-figure" href="#"
-                      ><img
-                        class="img-circles"
-                        src="images/user-11-75x75.jpg"
-                        alt=""
-                        width="75"
-                        height="75"
-                    /></a>
-                  </div>
-                  <div class="unit-body">
-                    <h4 class="quote-modern-cite">
-                      <a href="#">Catherine Williams</a>
-                    </h4>
-                    <p class="quote-modern-status">Regular client</p>
-                  </div>
-                </div>
-                <div class="quote-modern-text">
-                  <p class="q">
-                    RatherApp offers a high caliber of resources skilled in
-                    Microsoft Azure .NET, mobile and Quality Assurance. They
-                    became our true business partners over the past three years.
-                  </p>
-                </div>
-              </article>
+      <section id="testimonials">
+         <div class="container">
+            <div class="section-header">
+               <h5 class="header-blue">What Clients Say</h5>
             </div>
-            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-              <!-- Quote Modern-->
-              <article class="quote-modern quote-modern-custom">
-                <div class="unit unit-spacing-md align-items-center">
-                  <div class="unit-left">
-                    <a class="quote-modern-figure" href="#"
-                      ><img
-                        class="img-circles"
-                        src="images/user-12-75x75.jpg"
-                        alt=""
-                        width="75"
-                        height="75"
-                    /></a>
+            <div class="row mt-5 mb-3">
+               <div class="col-lg-12">
+                  <div id="client-testimonials" class="owl-carousel">
+
+                     <div class="card mb-4">
+                        <div class="client-num client-order">1</div>
+                        <div class="card-body">
+                           <img loading="lazy"  src="image/test3.png" alt="">
+                           <div class="client-name">Lorem, ipsum dolor.</div>
+
+                           <p class="card-text">
+                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi. <i
+                                 class="fas fa-quote-right"></i>
+                           </p>
+                        </div>
+                        <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                     </div>
+
+                      <div class="card mb-4">
+                        <div class="client-num client-order">2</div>
+                        <div class="card-body">
+                           <img loading="lazy"  src="image/test3.png" alt="">
+                           <div class="client-name">Lorem, ipsum dolor.</div>
+
+                           <p class="card-text">
+                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi. <i
+                                 class="fas fa-quote-right"></i>
+                           </p>
+                        </div>
+                        <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                     </div>
+
+                      <div class="card mb-4">
+                        <div class="client-num client-order">3</div>
+                        <div class="card-body">
+                           <img loading="lazy"  src="image/test3.png" alt="">
+                           <div class="client-name">Lorem, ipsum dolor.</div>
+
+                           <p class="card-text">
+                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi. <i
+                                 class="fas fa-quote-right"></i>
+                           </p>
+                        </div>
+                        <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                     </div>
+
+                      <div class="card mb-4">
+                        <div class="client-num client-order">4</div>
+                        <div class="card-body">
+                           <img loading="lazy"  src="image/test3.png" alt="">
+                           <div class="client-name">Lorem, ipsum dolor.</div>
+
+                           <p class="card-text">
+                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi. <i
+                                 class="fas fa-quote-right"></i>
+                           </p>
+                        </div>
+                        <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                     </div>
+
+                      <div class="card mb-4">
+                        <div class="client-num client-order"></div>
+                        <div class="card-body">
+                           <img loading="lazy"  src="image/test3.png" alt="">
+                           <div class="client-name">Lorem, ipsum dolor.</div>
+
+                           <p class="card-text">
+                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi. <i
+                                 class="fas fa-quote-right"></i>
+                           </p>
+                        </div>
+                        <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                     </div>
+
+                     
                   </div>
-                  <div class="unit-body">
-                    <h4 class="quote-modern-cite">
-                      <a href="#">Rupert Wood</a>
-                    </h4>
-                    <p class="quote-modern-status">Regular client</p>
-                  </div>
-                </div>
-                <div class="quote-modern-text">
-                  <p class="q">
-                    RatherApp powered us with a competent team to develop
-                    products for banking services. The team has been delivering
-                    results within budget and time, which is amazing.
-                  </p>
-                </div>
-              </article>
+               </div>
             </div>
-            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
-              <!-- Quote Modern-->
-              <article class="quote-modern quote-modern-custom">
-                <div class="unit unit-spacing-md align-items-center">
-                  <div class="unit-left">
-                    <a class="quote-modern-figure" href="#"
-                      ><img
-                        class="img-circles"
-                        src="images/user-20-75x75.jpg"
-                        alt=""
-                        width="75"
-                        height="75"
-                    /></a>
-                  </div>
-                  <div class="unit-body">
-                    <h4 class="quote-modern-cite">
-                      <a href="#">Samantha Brown</a>
-                    </h4>
-                    <p class="quote-modern-status">Regular client</p>
-                  </div>
-                </div>
-                <div class="quote-modern-text">
-                  <p class="q">
-                    RatherApp is a highly skilled and uniquely capable firm with
-                    multitudes of talent on-board. We have collaborated on a
-                    number of diverse projects that have been a great success.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+         </div>
       </section>
 
       <!-- Pricing-->
@@ -1487,113 +1435,112 @@
       </section>
 
       <!-- Contact Form-->
-      <section
-        class="section section-sm section-last bg-default text-left"
-        id="contacts"
-      >
-        <div class="container">
-          <article class="title-classic">
-            <div class="title-classic-title">
-              <h3>Get in touch</h3>
+       <section id="contact">
+         <div class="container">
+            <div class="section-header">
+               <h5 class="header-red">Contact Me</h5>
             </div>
-            <div class="title-classic-text">
-              <p>
-                If you have any questions, just fill in the contact form, and we
-                will answer you shortly.
-              </p>
+
+            <div class="row mt-5 mb-3">
+               <div  class="col-lg-6 col-md-6">
+                  <div class="card hover-border">
+                     <div class="card-body">
+                        <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                        <p class="card-text">
+                           <hr>
+                        <ul>
+                           <li>
+                              <div><i class="fas fa-user-clock"></i></div> Working Hours: Mon - Fri: 9AM to 5PM, Sun:
+                              9AM to 1PM
+                           </li>
+                           <li>
+                              <div><i class="fas fa-map-marker-alt "></i></div>
+                              A108 Adam Street
+                              New York, NY 535022
+                              United States
+                           </li>
+                           <li>
+                              <a href="">
+                                 <div> <i class="fas fa-phone-alt "></i></div> +1
+                                 5589 55488 55
+                              </a>
+
+                           </li>
+                           <li>
+                              <a href="
+                                       ">
+                                 <div><i class="far fa-envelope"></i></div> info@example.com
+                              </a>
+
+                           </li>
+
+                        </ul>
+                        <hr>
+                        <div class="contact-icons">
+                           <a href="#"><i class="fab fa-whatsapp"></i></a>
+                           <a href=""><i class="fab fa-telegram-plane"></i></a>
+                           <a href="#"><i class="fab fa-facebook"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </p>
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class=" col-lg-6 col-md-6">
+                  <div class="card hover-border">
+                     <div class="card-body">
+                        <div class="contact">
+                           <div class="form">
+                              <div id="sendmessage">
+                                 Your message has been sent. Thank you!
+                              </div>
+                              <div id="errormessage"></div>
+                              <form action="" method="post" role="form" class="contactForm">
+
+                                 <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                       <input type="text" name="name" class="form-control" id="name" placeholder="Name"
+                                          data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                       <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                       <input type="number" class="form-control" name="phone" id="phone"
+                                          placeholder="Phone Number" data-rule="phone"
+                                          data-msg="Please enter a valid phone number" />
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                       <input type="email" class="form-control" name="email" id="email"
+                                          placeholder="Your Email" data-rule="email"
+                                          data-msg="Please enter a valid email" />
+                                       <div class="validation"></div>
+                                    </div>
+
+                                    <div class="form-group col-lg-12">
+                                       <textarea class="form-control" name="message" rows="4" data-rule="required"
+                                          data-msg="Please write something for us" placeholder="Message"></textarea>
+                                       <div class="validation"></div>
+                                    </div>
+                                 </div>
+                                 <div class="text-center">
+                                    <button type="submit" title="Send Message">
+                                       Send Message
+                                    </button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </article>
-          <form
-            class="rd-form rd-form-variant-2 rd-mailform"
-            data-form-output="form-output-global"
-            data-form-type="contact"
-            method="post"
-            action="bat/rd-mailform.php"
-          >
-            <div class="row row-14 gutters-14">
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input
-                    class="form-input"
-                    id="contact-your-name-2"
-                    type="text"
-                    name="name"
-                    data-constraints="@Required"
-                  />
-                  <label class="form-label" for="contact-your-name-2"
-                    >Your Name</label
-                  >
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input
-                    class="form-input"
-                    id="contact-email-2"
-                    type="email"
-                    name="email"
-                    data-constraints="@Email @Required"
-                  />
-                  <label class="form-label" for="contact-email-2">E-mail</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input
-                    class="form-input"
-                    id="contact-phone-2"
-                    type="text"
-                    name="phone"
-                    data-constraints="@Numeric"
-                  />
-                  <label class="form-label" for="contact-phone-2">Phone</label>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-wrap">
-                  <label class="form-label" for="contact-message-2"
-                    >Message</label
-                  >
-                  <textarea
-                    class="form-input textarea-lg"
-                    id="contact-message-2"
-                    name="message"
-                    data-constraints="@Required"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-            <button class="button button-primary button-pipaluk" type="submit">
-              Send Message
-            </button>
-          </form>
-        </div>
+         </div>
       </section>
 
-      <!-- Bottom Banner-->
-      <section class="section section-fluid">
-        <a
-          class="section-banner"
-          href="https://www.templatemonster.com/intense-multipurpose-html-template.html"
-          style="
-            background-image: url(images/banner/banner-bg-01-1920x310.jpg);
-            background-image: -webkit-image-set(
-              url(images/banner/banner-bg-01-1920x310.jpg) 1x,
-              url(images/banner/banner-bg-01-3840x620.jpg) 2x
-            );
-          "
-          target="_blank"
-          ><img
-            src="images/banner/banner-fg-01-1600x310.png"
-            srcset="
-              images/banner/banner-fg-01-1600x310.png 1x,
-              images/banner/banner-fg-01-3200x620.png 2x
-            "
-            alt=""
-            width="1600"
-            height="310"
-        /></a>
-      </section>
+      
 
       <!-- RD Google Map-->
       <section class="section section-fluid">
@@ -1619,53 +1566,100 @@
       </section>
 
       <!-- Page Footer-->
-      <footer class="section section-fluid footer-minimal context-dark">
-        <div class="bg-gray-15">
-          <div class="container-fluid">
-            <div class="footer-minimal-inset oh">
-              <ul class="footer-list-category-2">
-                <li><a href="#">UI Design</a></li>
-                <li><a href="#">Windows/Mac OS Apps</a></li>
-                <li><a href="#">Android/iOS Apps</a></li>
-                <li><a href="#">Cloud Solutions</a></li>
-                <li><a href="#">Customer Support</a></li>
-              </ul>
-            </div>
-            <div class="footer-minimal-bottom-panel text-sm-left">
-              <div class="row row-10 align-items-md-center">
-                <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
-                  <div>
-                    <ul class="list-inline list-inline-sm footer-social-list-2">
-                      <li><a class="icon fa fa-facebook" href="#"></a></li>
-                      <li><a class="icon fa fa-twitter" href="#"></a></li>
-                      <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                      <li><a class="icon fa fa-instagram" href="#"></a></li>
-                    </ul>
+      <footer id="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+               <div class="card">
+                  <div class="card-body">
+                     <img loading="lazy"  class="footer-logo" src="image/footer-logo.jpg" alt="footer-logo" />
+                     <h6 class="card-title">Abiodun Digital Hub</h6>
+                     <p class="card-text">
+                        Deleniti optio et nisi dolorem debitis. Aliquam nobis
+                        est temporibus sunt ab inventore officiis aut
+                        voluptatibus.
+                     </p>
                   </div>
-                </div>
-                <div class="col-sm-6 col-md-4 order-sm-first">
-                  <!-- Rights-->
-                  <p class="rights">
-                    <span>&copy;&nbsp;</span
-                    ><span class="copyright-year"></span> <span>RatherApp</span>
-                  </p>
-                </div>
-                <div class="col-sm-6 col-md-4 text-md-right">
-                  <span>All rights reserved.</span>
-                  <span
-                    >Design&nbsp;by&nbsp;<a
-                      href="https://www.templatemonster.com"
-                      >TemplateMonster</a
-                    ></span
-                  >
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </footer>
 
-      <div
+            <div class="col-lg-4 col-md-6  mb-4">
+               <div class="card">
+                  <div class="card-body">
+                     <h6 class="card-title">Contact</h6>
+                     <ul>
+                        <li>
+                           <div><i class="fas fa-map-marker-alt "></i></div>
+                           A108 Adam Street
+                           <br />
+                           New York, NY 535022<br />
+                           United States <br />
+                        </li>
+                        <li>
+                           <div><i class="fas fa-phone-alt "></i></div> +1
+                           5589 55488 55<br />
+                        </li>
+                        <li>
+                           <div><i class="far fa-envelope cont-icons"></i></div> info@example.com<br />
+                        </li>
+
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+               <div class="card">
+                  <div class="card-body">
+                     <h6 class="card-title">Newsletter</h6>
+                     <p>
+                        Tamen quem nulla quae caramase seza.
+                     </p>
+
+                     <div class="footer-letter">
+                        <form action="index.html" method="POST">
+                           <input type="name" placeholder="Name" name="#" required />
+                           <input type="email" placeholder="Email" name="#" required />
+                           <br />
+                           <button type="submit">Submit</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="quick-links">
+         <div class="container">
+            <a href="">Home</a>
+            <a href="">Portfolio</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+         </div>
+      </div>
+
+      <div class="footer-social">
+         <div class="container">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+         </div>
+      </div>
+
+      <div class="footer-foot">
+         <div class="container">
+            Copyright &copy
+            <a href=""> <strong> Abiodun Digital Hub.</strong> </a> All
+            Rights Reserved.
+            <br />
+            Designed and Developed by
+            <a href="#"> <strong>Abiodun Samuel</strong> </a>
+         </div>
+      </div>
+    </footer>
+    <div
         class="modal fade"
         id="modalCta"
         tabindex="-1"
@@ -1760,13 +1754,13 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- coded by Himic-->
   </body>
 </html>
